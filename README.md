@@ -23,6 +23,13 @@ apt-get install mysql-server mysql-client
 Cria a database "login" e crie em seguida as tables "members" e "loginAttempts" usando o exemplo abaixo:
 
 ```sql
+
+CREATE USER 'iot'@'localhost' IDENTIFIED BY 'password321';
+CREATE USER 'apiuser'@'%' IDENTIFIED BY 'ppassword321';
+GRANT ALL PRIVILEGES ON login.* TO 'iot'@'localhost';
+GRANT ALL PRIVILEGES ON login.* TO 'iot'@'%';
+FLUSH PRIVILEGES;
+
 CREATE TABLE `members` (
   `id` char(23) NOT NULL,
   `username` varchar(65) NOT NULL DEFAULT '',
