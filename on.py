@@ -4,11 +4,9 @@ import sys
 import time
 import RPi.GPIO as GPIO
 
-PIN_17 = 17 # Define LED colour and their GPIO pin
+PIN_17 = 17 # Define LAMP GPIO pin
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
-
-#GPIO.setup(PIN_17, GPIO.OUT) # Setup GPIO pin
 
 a = sys.argv[1]
 
@@ -22,6 +20,6 @@ if (int(a) == 0):
     GPIO.setup(PIN_17, GPIO.OUT) # Setup GPIO pin
     GPIO.output(PIN_17, GPIO.LOW) #Turn off
     #GPIO.output(PIN_17, False) #Turn off
-    time.sleep (1)               #Wait
+    time.sleep (1)  #Wait
 
-GPIO.cleanup() #Useful to clear the board
+GPIO.cleanup() # Clear the board
