@@ -25,7 +25,7 @@ Cria a database "login" e crie em seguida as tables "members" e "loginAttempts" 
 ```sql
 
 CREATE USER 'iot'@'localhost' IDENTIFIED BY 'password321';
-CREATE USER 'apiuser'@'%' IDENTIFIED BY 'ppassword321';
+CREATE USER 'iot'@'%' IDENTIFIED BY 'password321';
 GRANT ALL PRIVILEGES ON login.* TO 'iot'@'localhost';
 GRANT ALL PRIVILEGES ON login.* TO 'iot'@'%';
 FLUSH PRIVILEGES;
