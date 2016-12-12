@@ -1,9 +1,9 @@
 <?php
 //Variaveis de conexao
-$host = "servidor"; // Host name
-$username = "usuario"; // Mysql username
-$password = "senha"; // Mysql password
-$db_name = "bancodedados"; // Database name
+$host = "localhost"; // Host name
+$username = "iot"; // Mysql username
+$password = "password321"; // Mysql password
+$db_name = "login"; // Database name
 
 // Nao mude a linhas abaixo
 
