@@ -5,8 +5,15 @@ Um simples e seguro, sistema de gerenciamento IoT com autenticação, usando PHP
 
 <img src="https://raw.githubusercontent.com/richardsonlima/estacio-recife-fir-tcc-IoT/master/screenshotsimages/screenshot.png" alt="Login Page Screenshot" />
 
-## Preparando o ambiente
+## Preparando o ambiente: Efetue a instalação dos pacotes abaixo no Raspibian
 ### 
+
+```bash
+apt-get install apache2 apache2-doc apache2-utils
+apt-get install libapache2-mod-php5 php5 php-pear php5-xcache
+apt-get install php5-mysql
+apt-get install mysql-server mysql-client
+```
 
 ### Banco de dados
 
